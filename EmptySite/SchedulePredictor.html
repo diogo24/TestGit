@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Schedule Page</title>
+        <link rel="stylesheet" type="text/css" href="StyleSheetPredi.css" media="screen" />
+        <link rel="stylesheet" href="jquery-ui.css" />
+    </head>
+    <body>
+        <div><input type="file" id="fileUpload" onchange="nflSchedulePredictor.FileRead(this, event)"></div>
+        <div id="schedule" style="display:inline-block; vertical-align: top;">
+         <!-- List rounds -->
+        <label>Round Number</label>
+        <ul id="roundNumber"></ul>
+
+        <!-- List round to create games -->
+        <label>Round Games</label>
+        <ul id="round"></ul>
+
+        </div>
+        <div id="nfl-teams" style="display:inline-block; vertical-align: top; ">
+            <!-- List with the ranking of the teams -->
+            <ol id="nfl-teams-ranking" style="margin: 0;">
+            </ol>
+        </div>
+        <div id="nfl-standings" style="display:inline-block; vertical-align: top;">
+            <div id="afc-standings" style="display:inline-block">
+                <label>AFC</label>
+                <div>
+                    <label>AFC West</label>
+                    <table id="afc-west-standings">
+                        <tr>
+                            <th>Team Name</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Pct</th>
+                        </tr>                        
+                    </table>
+                </div>
+                <div>
+                    <label>AFC North</label>
+                    <table id="afc-north-standings">
+                         <tr>
+                            <th>Team Name</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Pct</th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>AFC South</label>
+                    <table id="afc-south-standings">
+                         <tr>
+                            <th>Team Name</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Pct</th>
+                        </tr>
+                    </table>
+                    </div>
+                <div>
+                    <label>AFC East</label>
+                    <table id="afc-east-standings">
+                         <tr>
+                            <th>Team Name</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Pct</th>
+                        </tr>
+                    </table>
+                 </div>
+            </div>
+            <div id="nfc-standings" style="display:inline-block">
+                <label>NFC</label>
+                <div>
+                    <label>NFC West</label>
+                    <table id="nfc-west-standings">
+                         <tr>
+                            <th>Team Name</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Pct</th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>NFC North</label>
+                    <table id="nfc-north-standings">
+                         <tr>
+                            <th>Team Name</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Pct</th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>NFC South</label>
+                    <table id="nfc-south-standings">
+                         <tr>
+                            <th>Team Name</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Pct</th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <label>NFC East</label>
+                    <table id="nfc-east-standings">
+                         <tr>
+                            <th>Team Name</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Pct</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="jquery-2.0.3.js"></script>
+        <script type="text/javascript" src="jquery-ui.js"></script>
+        <script type="text/javascript" src="Script.js"></script>
+        <script>
+            nflSchedulePredictor.showTeamsRankings();
+            nflSchedulePredictor.showTeamsStandings();        
+        </script>
+    </body>
+</html>

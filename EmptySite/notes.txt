@@ -1,0 +1,5 @@
+1) Schedule creator, week by week, use drag and drop to create the schedule and save it in one file! 
+2) see schedule by team or by week
+3) allow set results in matchs, and update the schedules and the standings and the rankings
+
+file read -> http://www.html5rocks.com/en/tutorials/file/dndfiles/
