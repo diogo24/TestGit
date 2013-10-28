@@ -3,3 +3,6 @@
 3) allow set results in matchs, and update the schedules and the standings and the rankings
 
 file read -> http://www.html5rocks.com/en/tutorials/file/dndfiles/
+
+
+4) test git hub
